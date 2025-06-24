@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigSkills - Student Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/auth.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="dashboard">
+    <header class="dashboard-header">
+        <div class="container">
+            <div class="logo">
+                <h1>Dig<span>Skills</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="academy.html">Academy</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="#" id="logoutBtn">Logout</a></li>
+                </ul>
+            </nav>
+            <div class="user-profile">
+                <img id="userAvatar" src="images/default-avatar.jpg" alt="User">
+                <span id="userName">Loading...</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="sidebar-menu">
+                <ul>
+                    <li class="active"><a href="#"><i class="fas fa-home"></i> Dashboard</a></li>
+                    <li><a href="#"><i class="fas fa-book"></i> My Courses</a></li>
+                    <li><a href="#"><i class="fas fa-calendar-alt"></i> Schedule</a></li>
+                    <li><a href="#"><i class="fas fa-tasks"></i> Assignments</a></li>
+                    <li><a href="#"><i class="fas fa-chart-line"></i> Progress</a></li>
+                    <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <div class="welcome-banner">
+                <h1>Welcome back, <span id="dashboardUserName"></span>!</h1>
+                <p>Continue your learning journey or explore new programs</p>
+            </div>
+
+            <div class="dashboard-cards">
+                <div class="card">
+                    <h3>Active Courses</h3>
+                    <div class="card-content">
+                        <i class="fas fa-book-open"></i>
+                        <span class="card-value" id="activeCourses">2</span>
+                    </div>
+                    <a href="#" class="card-link">View All</a>
+                </div>
+
+                <div class="card">
+                    <h3>Pending Assignments</h3>
+                    <div class="card-content">
+                        <i class="fas fa-tasks"></i>
+                        <span class="card-value" id="pendingAssignments">3</span>
+                    </div>
+                    <a href="#" class="card-link">View All</a>
+                </div>
+
+                <div class="card">
+                    <h3>Hours Learned</h3>
+                    <div class="card-content">
+                        <i class="fas fa-clock"></i>
+                        <span class="card-value" id="hoursLearned">24</span>
+                    </div>
+                    <a href="#" class="card-link">View Progress</a>
+                </div>
+
+                <div class="card">
+                    <h3>Certificates</h3>
+                    <div class="card-content">
+                        <i class="fas fa-certificate"></i>
+                        <span class="card-value" id="certificatesEarned">1</span>
+                    </div>
+                    <a href="#" class="card-link">View All</a>
+                </div>
+            </div>
+
+            <section class="current-courses">
+                <h2>Your Current Courses</h2>
+                <div class="courses-list">
+                    <div class="course-item">
+                        <div class="course-image">
+                            <img src="images/web-development.jpg" alt="Web Development">
+                        </div>
+                        <div class="course-info">
+                            <h3>Full Stack Web Development</h3>
+                            <div class="course-progress">
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 45%"></div>
+                                </div>
+                                <span>45% Complete</span>
+                            </div>
+                            <div class="course-meta">
+                                <span><i class="fas fa-play-circle"></i> Module 5/12</span>
+                                <span><i class="fas fa-clock"></i> Next: JavaScript Functions</span>
+                            </div>
+                            <a href="#" class="btn btn-small">Continue Learning</a>
+                        </div>
+                    </div>
+
+                    <div class="course-item">
+                        <div class="course-image">
+                            <img src="images/digital-marketing.jpg" alt="Digital Marketing">
+                        </div>
+                        <div class="course-info">
+                            <h3>Digital Marketing Mastery</h3>
+                            <div class="course-progress">
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 20%"></div>
+                                </div>
+                                <span>20% Complete</span>
+                            </div>
+                            <div class="course-meta">
+                                <span><i class="fas fa-play-circle"></i> Module 2/10</span>
+                                <span><i class="fas fa-clock"></i> Next: SEO Fundamentals</span>
+                            </div>
+                            <a href="#" class="btn btn-small">Continue Learning</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="upcoming-events">
+                <h2>Upcoming Events</h2>
+                <div class="events-list">
+                    <div class="event-item">
+                        <div class="event-date">
+                            <span class="day">15</span>
+                            <span class="month">Jun</span>
+                        </div>
+                        <div class="event-details">
+                            <h3>Live Q&A Session</h3>
+                            <p>Web Development Cohort - Ask your questions to the instructor</p>
+                            <div class="event-meta">
+                                <span><i class="fas fa-clock"></i> 2:00 PM - 3:30 PM</span>
+                                <span><i class="fas fa-video"></i> Google Meet</span>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-outline btn-small">Join Now</a>
+                    </div>
+
+                    <div class="event-item">
+                        <div class="event-date">
+                            <span class="day">18</span>
+                            <span class="month">Jun</span>
+                        </div>
+                        <div class="event-details">
+                            <h3>Assignment Deadline</h3>
+                            <p>Digital Marketing - Complete your first campaign project</p>
+                            <div class="event-meta">
+                                <span><i class="fas fa-clock"></i> 11:59 PM</span>
+                                <span><i class="fas fa-upload"></i> Submit Online</span>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-outline btn-small">View Assignment</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer class="dashboard-footer">
+        <div class="container">
+            <p>&copy; 2023 DigSkills. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/auth.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

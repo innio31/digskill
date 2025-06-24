@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigSkills Academy - Digital Training Programs</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Dig<span>Skills</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="academy.html" class="active">Academy</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="#" id="loginBtn">Login</a></li>
+                </ul>
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>DigSkills Academy</h1>
+            <p>Transform your career with our industry-leading digital training programs</p>
+        </div>
+    </section>
+
+    <section class="programs">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Training Programs</h2>
+                <p>Choose from our comprehensive range of digital skills training programs</p>
+            </div>
+
+            <div class="program-categories">
+                <div class="category-tabs">
+                    <button class="tab-btn active" data-category="all">All Programs</button>
+                    <button class="tab-btn" data-category="secondary">Secondary School</button>
+                    <button class="tab-btn" data-category="school-leavers">School Leavers</button>
+                    <button class="tab-btn" data-category="professionals">Professionals</button>
+                    <button class="tab-btn" data-category="online">Online Courses</button>
+                </div>
+
+                <div class="programs-grid">
+                    <!-- Program cards will be loaded here -->
+                    <div class="program-card" data-category="secondary">
+                        <div class="program-image">
+                            <img src="images/digital-literacy.jpg" alt="Digital Literacy">
+                        </div>
+                        <div class="program-details">
+                            <h3>Digital Literacy for Teens</h3>
+                            <p class="program-description">Essential digital skills for secondary school students including computer basics, internet safety, and productivity tools.</p>
+                            <div class="program-meta">
+                                <span><i class="fas fa-clock"></i> 8 Weeks</span>
+                                <span><i class="fas fa-user-graduate"></i> Beginner</span>
+                            </div>
+                            <button class="btn enroll-btn">Enroll Now</button>
+                        </div>
+                    </div>
+
+                    <div class="program-card" data-category="school-leavers">
+                        <div class="program-image">
+                            <img src="images/web-development.jpg" alt="Web Development">
+                        </div>
+                        <div class="program-details">
+                            <h3>Full Stack Web Development</h3>
+                            <p class="program-description">Master front-end and back-end web development with HTML, CSS, JavaScript, Node.js, and databases.</p>
+                            <div class="program-meta">
+                                <span><i class="fas fa-clock"></i> 12 Weeks</span>
+                                <span><i class="fas fa-user-graduate"></i> Intermediate</span>
+                            </div>
+                            <button class="btn enroll-btn">Enroll Now</button>
+                        </div>
+                    </div>
+
+                    <div class="program-card" data-category="professionals">
+                        <div class="program-image">
+                            <img src="images/data-science.jpg" alt="Data Science">
+                        </div>
+                        <div class="program-details">
+                            <h3>Data Science & Analytics</h3>
+                            <p class="program-description">Learn Python for data analysis, machine learning, and data visualization to drive business decisions.</p>
+                            <div class="program-meta">
+                                <span><i class="fas fa-clock"></i> 16 Weeks</span>
+                                <span><i class="fas fa-user-graduate"></i> Advanced</span>
+                            </div>
+                            <button class="btn enroll-btn">Enroll Now</button>
+                        </div>
+                    </div>
+
+                    <div class="program-card" data-category="online">
+                        <div class="program-image">
+                            <img src="images/digital-marketing.jpg" alt="Digital Marketing">
+                        </div>
+                        <div class="program-details">
+                            <h3>Digital Marketing Mastery</h3>
+                            <p class="program-description">Comprehensive training in SEO, social media marketing, content marketing, and Google Analytics.</p>
+                            <div class="program-meta">
+                                <span><i class="fas fa-clock"></i> 10 Weeks</span>
+                                <span><i class="fas fa-user-graduate"></i> All Levels</span>
+                            </div>
+                            <button class="btn enroll-btn">Enroll Now</button>
+                        </div>
+                    </div>
+
+                    <div class="program-card" data-category="school-leavers">
+                        <div class="program-image">
+                            <img src="images/graphic-design.jpg" alt="Graphic Design">
+                        </div>
+                        <div class="program-details">
+                            <h3>Graphic Design & Branding</h3>
+                            <p class="program-description">Learn professional design tools like Adobe Photoshop, Illustrator, and design principles.</p>
+                            <div class="program-meta">
+                                <span><i class="fas fa-clock"></i> 8 Weeks</span>
+                                <span><i class="fas fa-user-graduate"></i> Beginner</span>
+                            </div>
+                            <button class="btn enroll-btn">Enroll Now</button>
+                        </div>
+                    </div>
+
+                    <div class="program-card" data-category="professionals">
+                        <div class="program-image">
+                            <img src="images/cybersecurity.jpg" alt="Cybersecurity">
+                        </div>
+                        <div class="program-details">
+                            <h3>Cybersecurity Fundamentals</h3>
+                            <p class="program-description">Essential cybersecurity skills including ethical hacking, network security, and risk management.</p>
+                            <div class="program-meta">
+                                <span><i class="fas fa-clock"></i> 14 Weeks</span>
+                                <span><i class="fas fa-user-graduate"></i> Intermediate</span>
+                            </div>
+                            <button class="btn enroll-btn">Enroll Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Transform Your Digital Skills?</h2>
+            <p>Join thousands of students who have accelerated their careers with DigSkills training programs</p>
+            <a href="#" class="btn" id="ctaLoginBtn">Get Started Now</a>
+        </div>
+    </section>
+
+    <footer>
+        <!-- Same footer as index.html -->
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal" id="loginModal">
+        <!-- Same modal as index.html -->
+    </div>
+
+    <!-- Enrollment Modal -->
+    <div class="modal" id="enrollModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Enroll in <span id="programTitle"></span></h2>
+            <div class="enroll-form">
+                <p>Please login with your school Google account to enroll in this program</p>
+                <button id="enrollGoogleSignInBtn" class="btn btn-google">
+                    <i class="fab fa-google"></i> Sign in with Google
+                </button>
+                <p class="auth-note">You'll be redirected to complete enrollment after login</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/academy.js"></script>
+</body>
+</html>
